@@ -11,6 +11,7 @@
 		355326841F4C68B400F5EEE6 /* Membership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355326831F4C68B400F5EEE6 /* Membership.swift */; };
 		355326881F4C8A4400F5EEE6 /* bb-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 355326871F4C8A4300F5EEE6 /* bb-config.plist */; };
 		3553268A1F4C905800F5EEE6 /* ResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355326891F4C905800F5EEE6 /* ResultTableViewController.swift */; };
+		356134FB1F4CC2D40090DC5B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 356134FA1F4CC2D40090DC5B /* README.md */; };
 		35B78C101F479925002FED6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B78C0F1F479925002FED6A /* AppDelegate.swift */; };
 		35B78C121F479925002FED6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B78C111F479925002FED6A /* ViewController.swift */; };
 		35B78C151F479925002FED6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35B78C131F479925002FED6A /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		355326831F4C68B400F5EEE6 /* Membership.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Membership.swift; sourceTree = "<group>"; };
 		355326871F4C8A4300F5EEE6 /* bb-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "bb-config.plist"; sourceTree = "<group>"; };
 		355326891F4C905800F5EEE6 /* ResultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
+		356134FA1F4CC2D40090DC5B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		35B78C0C1F479925002FED6A /* Blackboard 3LO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blackboard 3LO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B78C0F1F479925002FED6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35B78C111F479925002FED6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		35B78C031F479924002FED6A = {
 			isa = PBXGroup;
 			children = (
+				356134FA1F4CC2D40090DC5B /* README.md */,
 				35B78C0E1F479925002FED6A /* Blackboard 3LO */,
 				35B78C0D1F479925002FED6A /* Products */,
 				96254359B5B84969530C447C /* Pods */,
@@ -169,6 +172,7 @@
 				35B78C1A1F479925002FED6A /* LaunchScreen.storyboard in Resources */,
 				35B78C171F479925002FED6A /* Assets.xcassets in Resources */,
 				35B78C151F479925002FED6A /* Main.storyboard in Resources */,
+				356134FB1F4CC2D40090DC5B /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
