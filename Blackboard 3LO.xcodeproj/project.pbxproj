@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		355326821F4B8CFB00F5EEE6 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355326811F4B8CFB00F5EEE6 /* Token.swift */; };
+		355326841F4C68B400F5EEE6 /* Membership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355326831F4C68B400F5EEE6 /* Membership.swift */; };
+		355326881F4C8A4400F5EEE6 /* bb-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 355326871F4C8A4300F5EEE6 /* bb-config.plist */; };
+		3553268A1F4C905800F5EEE6 /* ResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355326891F4C905800F5EEE6 /* ResultTableViewController.swift */; };
 		35B78C101F479925002FED6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B78C0F1F479925002FED6A /* AppDelegate.swift */; };
 		35B78C121F479925002FED6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B78C111F479925002FED6A /* ViewController.swift */; };
 		35B78C151F479925002FED6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35B78C131F479925002FED6A /* Main.storyboard */; };
 		35B78C171F479925002FED6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B78C161F479925002FED6A /* Assets.xcassets */; };
 		35B78C1A1F479925002FED6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35B78C181F479925002FED6A /* LaunchScreen.storyboard */; };
+		35B78C4B1F4B2517002FED6A /* Blackboard3LOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B78C4A1F4B2517002FED6A /* Blackboard3LOManager.swift */; };
+		F2FEF8B0D4FD5B8B75F44DE8 /* Pods_Blackboard_3LO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59479BBF91D1D2B2879AD2A2 /* Pods_Blackboard_3LO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		239A7573FE6DABDD6EF981C7 /* Pods-Blackboard 3LO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackboard 3LO.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blackboard 3LO/Pods-Blackboard 3LO.release.xcconfig"; sourceTree = "<group>"; };
+		355326811F4B8CFB00F5EEE6 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		355326831F4C68B400F5EEE6 /* Membership.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Membership.swift; sourceTree = "<group>"; };
+		355326871F4C8A4300F5EEE6 /* bb-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "bb-config.plist"; sourceTree = "<group>"; };
+		355326891F4C905800F5EEE6 /* ResultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
 		35B78C0C1F479925002FED6A /* Blackboard 3LO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blackboard 3LO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B78C0F1F479925002FED6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35B78C111F479925002FED6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +33,9 @@
 		35B78C161F479925002FED6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35B78C191F479925002FED6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35B78C1B1F479925002FED6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35B78C4A1F4B2517002FED6A /* Blackboard3LOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blackboard3LOManager.swift; sourceTree = "<group>"; };
+		44DA9E43A98C8C96CC57FB98 /* Pods-Blackboard 3LO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blackboard 3LO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Blackboard 3LO/Pods-Blackboard 3LO.debug.xcconfig"; sourceTree = "<group>"; };
+		59479BBF91D1D2B2879AD2A2 /* Pods_Blackboard_3LO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blackboard_3LO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FEF8B0D4FD5B8B75F44DE8 /* Pods_Blackboard_3LO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				35B78C0E1F479925002FED6A /* Blackboard 3LO */,
 				35B78C0D1F479925002FED6A /* Products */,
+				96254359B5B84969530C447C /* Pods */,
+				4736009FEA4F0ACC29D659E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,36 @@
 		35B78C0E1F479925002FED6A /* Blackboard 3LO */ = {
 			isa = PBXGroup;
 			children = (
+				35B78C4A1F4B2517002FED6A /* Blackboard3LOManager.swift */,
 				35B78C0F1F479925002FED6A /* AppDelegate.swift */,
 				35B78C111F479925002FED6A /* ViewController.swift */,
 				35B78C131F479925002FED6A /* Main.storyboard */,
 				35B78C161F479925002FED6A /* Assets.xcassets */,
 				35B78C181F479925002FED6A /* LaunchScreen.storyboard */,
 				35B78C1B1F479925002FED6A /* Info.plist */,
+				355326811F4B8CFB00F5EEE6 /* Token.swift */,
+				355326831F4C68B400F5EEE6 /* Membership.swift */,
+				355326871F4C8A4300F5EEE6 /* bb-config.plist */,
+				355326891F4C905800F5EEE6 /* ResultTableViewController.swift */,
 			);
 			path = "Blackboard 3LO";
+			sourceTree = "<group>";
+		};
+		4736009FEA4F0ACC29D659E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59479BBF91D1D2B2879AD2A2 /* Pods_Blackboard_3LO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96254359B5B84969530C447C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44DA9E43A98C8C96CC57FB98 /* Pods-Blackboard 3LO.debug.xcconfig */,
+				239A7573FE6DABDD6EF981C7 /* Pods-Blackboard 3LO.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35B78C1E1F479925002FED6A /* Build configuration list for PBXNativeTarget "Blackboard 3LO" */;
 			buildPhases = (
+				AF748A62E60A1BA22F12DA45 /* [CP] Check Pods Manifest.lock */,
 				35B78C081F479925002FED6A /* Sources */,
 				35B78C091F479925002FED6A /* Frameworks */,
 				35B78C0A1F479925002FED6A /* Resources */,
+				F667A55BF7C95F5C713D668B /* [CP] Embed Pods Frameworks */,
+				FCD45E402CC914B177D6CC16 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				355326881F4C8A4400F5EEE6 /* bb-config.plist in Resources */,
 				35B78C1A1F479925002FED6A /* LaunchScreen.storyboard in Resources */,
 				35B78C171F479925002FED6A /* Assets.xcassets in Resources */,
 				35B78C151F479925002FED6A /* Main.storyboard in Resources */,
@@ -131,13 +174,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AF748A62E60A1BA22F12DA45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F667A55BF7C95F5C713D668B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Blackboard 3LO/Pods-Blackboard 3LO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCD45E402CC914B177D6CC16 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Blackboard 3LO/Pods-Blackboard 3LO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		35B78C081F479925002FED6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				355326821F4B8CFB00F5EEE6 /* Token.swift in Sources */,
 				35B78C121F479925002FED6A /* ViewController.swift in Sources */,
+				3553268A1F4C905800F5EEE6 /* ResultTableViewController.swift in Sources */,
+				35B78C4B1F4B2517002FED6A /* Blackboard3LOManager.swift in Sources */,
 				35B78C101F479925002FED6A /* AppDelegate.swift in Sources */,
+				355326841F4C68B400F5EEE6 /* Membership.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +353,9 @@
 		};
 		35B78C1F1F479925002FED6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44DA9E43A98C8C96CC57FB98 /* Pods-Blackboard 3LO.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Blackboard 3LO/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -270,7 +367,9 @@
 		};
 		35B78C201F479925002FED6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 239A7573FE6DABDD6EF981C7 /* Pods-Blackboard 3LO.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Blackboard 3LO/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -299,6 +398,7 @@
 				35B78C201F479925002FED6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

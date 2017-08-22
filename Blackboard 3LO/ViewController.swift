@@ -7,19 +7,28 @@
 //
 
 import UIKit
+import Alamofire.Swift
 
 class ViewController: UIViewController {
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        Blackboard3LOManager.sharedInstance.startOAuth2Login()
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func authenticate(_ sender: Any) {
+        
+        let rvc = self.storyboard?.instantiateViewController(withIdentifier: "ResultTableViewController") as! ResultTableViewController
+        
+        print("call present")
+        self.present(rvc,
+                     animated: true,
+                     completion: nil)
+        
     }
-
-
+    
 }
-
