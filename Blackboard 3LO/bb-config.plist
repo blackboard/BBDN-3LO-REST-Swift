@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>OAUTH_SECRET</key>
-	<string>&lt;your rest secret&gt;</string>
+	<string>&lt;secret&gt;</string>
 	<key>OAUTH_KEY</key>
-	<string>&lt;your rest key&gt;</string>
+	<string>&lt;key&gt;</string>
 	<key>DOMAIN</key>
-	<string>&lt;https://yourdomain.edu&gt;</string>
+	<string>&lt;host&gt;</string>
 </dict>
 </plist>

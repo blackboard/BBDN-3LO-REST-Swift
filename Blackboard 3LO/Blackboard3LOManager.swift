@@ -39,8 +39,11 @@ class Blackboard3LOManager
     static let sharedInstance = Blackboard3LOManager()
  
     var DOMAIN: String = ""
+    var CLIENT_ID: String = ""
     var OAUTH_KEY: String = ""
     var OAUTH_SECRET: String = ""
+    
+    var nonce: String = ""
 
     
     // handlers for the OAuth process
@@ -66,11 +69,34 @@ class Blackboard3LOManager
             OAUTH_SECRET = (settings["OAUTH_SECRET"] as? String)!
         }
         
-        let authPath:String = "\(DOMAIN)/learn/api/public/v1/oauth2/authorizationcode?redirect_uri=bb3LO://&response_type=code&client_id=\(OAUTH_KEY)&scope=read&state=TEST_STATE"
-        if let authURL:NSURL = NSURL(string: authPath)
+        nonce = randomAlphaNumericString(length: 32)
+        
+        print("NONCE: \(nonce)")
+
+        
+        //let base64String = nonce!.base64EncodedStringWithOptions(NSDataBase64EncodingOption‌​s(0))
+        
+        let authPath:String = "\(DOMAIN)/learn/api/public/v1/oauth2/authorizationcode?redirect_uri=bb3LO://&response_type=code&client_id=\(OAUTH_KEY)&scope=read&state=\(nonce)"
+        
+            if let authURL:NSURL = NSURL(string: authPath)
         {
             UIApplication.shared.open(authURL as URL)
         }
+    }
+    
+    func randomAlphaNumericString(length: Int) -> String {
+        let allowedChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        let allowedCharsCount = UInt32(allowedChars.characters.count)
+        var randomString = ""
+        
+        for _ in 0..<length {
+            let randomNum = Int(arc4random_uniform(allowedCharsCount))
+            let randomIndex = allowedChars.index(allowedChars.startIndex, offsetBy: randomNum)
+            let newCharacter = allowedChars[randomIndex]
+            randomString += String(newCharacter)
+        }
+        
+        return randomString
     }
     
     func processOAuthStep1Response(url: URL)
@@ -80,12 +106,25 @@ class Blackboard3LOManager
         var code:String?
         if let queryItems = components?.queryItems
         {
+            print(queryItems)
             for queryItem in queryItems
             {
+                print(queryItem)
                 if (queryItem.name.lowercased() == "code")
                 {
                     code = queryItem.value
-                    break
+                    print(code!)
+                }
+                if (queryItem.name.lowercased() == "state")
+                {
+                    let state = queryItem.value
+                    print("NONCE: \(nonce) STATE: \(state!)")
+                    
+                    if (nonce != state)
+                    {
+                        //TODO: implement some really cool CSRF handling
+                        print("DOH! You are a haxor!")
+                    }
                 }
             }
         }
