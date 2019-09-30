@@ -59,21 +59,25 @@ class ResultTableViewController: UITableViewController {
             {
                 (response) in
                 
-                let json = JSON(data: response.data!)
+                do {
+                    let json = try JSON(data: response.data!)
                 
-                for (_,membership) in json["results"] {
-                    //print("MEMBERSHIP: \(membership)") // serialized json response
+                    for (_,membership) in json["results"] {
+                        //print("MEMBERSHIP: \(membership)") // serialized json response
+                        
+                        let ms = Membership()
+                        
+                        ms.courseId = membership["courseId"].string
+                        ms.courseRoleId = membership["courseRoleId"].string
+                        
+                        self.myMemberships?.append(ms)
+                    }
                     
-                    let ms = Membership()
-                    
-                    ms.courseId = membership["courseId"].string
-                    ms.courseRoleId = membership["courseRoleId"].string
-                    
-                    self.myMemberships?.append(ms)
+                    dump(self.myMemberships)
+                    self.tableView.reloadData()
+                } catch {
+                    print("Unexpected error: \(error).")
                 }
-                
-                dump(self.myMemberships)
-                self.tableView.reloadData()
         }
     }
     

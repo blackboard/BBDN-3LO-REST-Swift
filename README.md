@@ -7,19 +7,19 @@ Please note that this project is intended to demonstrate Blackboard Learn's APIs
 ### Project at a Glance
 
 * Target: Blackboard Learn 3200.7 or later
-* Source Release: 1.0
-* Release Date: 2017-08-22
+* Source Release: 2.0
+* Release Date: 2019-09-30
 * Author: Scott Hurrey
 
 ### Developer Notes
 
-* MacOS 10.12.6
-* IDE: Xcode 8.3.3
-* iOS 10.3
-* Swift 3.1
-* CocoaPods 1.1.1
+* MacOS 10.13.6
+* IDE: Xcode 10.1
+* iOS 12.1
+* Swift 4.2.1
+* CocoaPods 1.7.1
 * Alamofire 4.2.0
-* SwiftyJSON 3.1.3
+* SwiftyJSON 5.0.0
 * Simulator set to iPhone 7
 * You will need Ruby to install CocoaPods
 
