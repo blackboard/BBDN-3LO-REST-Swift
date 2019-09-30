@@ -2,11 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>OAUTH_SECRET</key>
-	<string>&lt;secret&gt;</string>
-	<key>OAUTH_KEY</key>
-	<string>&lt;key&gt;</string>
-	<key>DOMAIN</key>
-	<string>https://&lt;domain&gt;</string>
+	<key>IDEDidComputeMac32BitWarning</key>
+	<true/>
 </dict>
 </plist>
