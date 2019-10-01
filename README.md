@@ -49,9 +49,14 @@ and from the dropdown, select the pod that is giving you issue, and press CMD-B 
 
 7.	Now, simply click the start icon to run the application in the simulator.
 
+## Common Issues
+Since updating the libbrary to use Swift 4.2, you may receive an error that SwiftyJSON cannot be compiled under Swift 5.0, even though the project is set to use 4.2. This requires a Build Settings change on the SwiftyJSON pod itself. See this video for instructions.
+
+https://drive.google.com/file/d/1wynu5RyaFCJhUyoYi8zP6DxFNKTkIQQO/view?usp=sharing
+
 ## License Information
 
-> Copyright © 2017 Blackboard Developer Community. All rights reserved.
+> Copyright © 2019 Blackboard Developer Community. All rights reserved.
 >
 > Redistribution and use in source and binary forms, with or without
 > modification, are permitted provided that the following conditions are met:
