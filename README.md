@@ -41,9 +41,9 @@ Please note that this project is intended to demonstrate Blackboard Learn's APIs
 
       This will install Alamofire (HTTP library) and SwiftyJSON. Now open XCode and select the Blackboard 3LO.xcworkspace file       to open. You may see errors related to xcode settings causing one or both of the pods to fail. If this occurs, click the       Blackboard 3LO link illustrated here: 
 
-!["Image showing the xcode interface and where to click in order to switch the current project"]          (https://s3.amazonaws.com/bbdn-images/3LO+project+selector.png "Project Selector") 
+![Image showing the xcode interface and where to click in order to switch the current project]          (https://s3.amazonaws.com/bbdn-images/3LO+project+selector.png "Project Selector") 
 
-      and from the dropdown, select the pod that is giving you issue, and press CMD-B to build. It will highlight any errors         you encounter and prompt you to fix them automatically.
+and from the dropdown, select the pod that is giving you issue, and press CMD-B to build. It will highlight any errors         you encounter and prompt you to fix them automatically.
 
 6.	Next, edit the bb-config.plist file to enter your DOMAIN including the protocol (i.e. https://monument.edu), your REST key and your REST secret. 
 
